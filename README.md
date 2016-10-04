@@ -5,3 +5,4 @@ Some random scripts and configurations I've created to solve specific issues and
 Keeping this stuff, might need it again in the future.
 
 - nginx-redirect.conf: redirects a server name based on a regex to a final server name
+- nginx-proxy_pass-regex.conf: proxy_pass based on a regex
