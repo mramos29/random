@@ -17,8 +17,7 @@ tail -5000 /var/log/httpd/domains/access.log | grep POST | awk '{print $1}' | so
     # ...and wasn't blocked yet...
     if [ $? ]
     then 
-      ripenet=`whois -n -h whois.ripe.net $ip | grep -i netname | awk '{print $2
-}'`
+      ripenet=`whois -n -h whois.ripe.net $ip | grep -i netname | awk '{print $2}'`
       arinnet=`whois -n -h whois.arin.net $ip | grep -i netname | awk '{print $2}'`
       # ...and ip is not from Cloudflare, we will block it!
       # First, we check RIPE...
